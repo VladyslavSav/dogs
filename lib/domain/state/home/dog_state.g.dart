@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'home_state.dart';
+part of 'dog_state.dart';
 
 // **************************************************************************
 // StoreGenerator
@@ -8,8 +8,8 @@ part of 'home_state.dart';
 
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
-mixin _$HomeState on HomeStateBase, Store {
-  final _$dogAtom = Atom(name: 'HomeStateBase.dog');
+mixin _$DogState on DogStateBase, Store {
+  final _$dogAtom = Atom(name: 'DogStateBase.dog');
 
   @override
   Dog get dog {
@@ -24,7 +24,7 @@ mixin _$HomeState on HomeStateBase, Store {
     });
   }
 
-  final _$isLoadingAtom = Atom(name: 'HomeStateBase.isLoading');
+  final _$isLoadingAtom = Atom(name: 'DogStateBase.isLoading');
 
   @override
   bool get isLoading {
@@ -39,7 +39,7 @@ mixin _$HomeState on HomeStateBase, Store {
     });
   }
 
-  final _$getDogAsyncAction = AsyncAction('HomeStateBase.getDog');
+  final _$getDogAsyncAction = AsyncAction('DogStateBase.getDog');
 
   @override
   Future<void> getDog() {

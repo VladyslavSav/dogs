@@ -2,15 +2,15 @@ import 'package:mobx/mobx.dart';
 import '../../../domain/repository/dog_repository.dart';
 import '../../../domain/model/dog.dart';
 
-part 'home_state.g.dart';
+part 'dog_state.g.dart';
 
-class HomeState = HomeStateBase with _$HomeState;
+class DogState = DogStateBase with _$DogState;
 
-abstract class HomeStateBase with Store {
-  HomeStateBase(this._dogRepository);
+abstract class DogStateBase with Store {
+  DogStateBase(this._dogRepository);
 
   final DogRepository _dogRepository;
-  //TODO
+
   @observable
   Dog dog = Dog('');
 

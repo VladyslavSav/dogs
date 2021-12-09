@@ -4,14 +4,10 @@ import '../../domain/repository/dog_repository.dart';
 import 'api_module.dart';
 
 class RepositoryModule {
-  static DogRepository _dogRepository = DogDataRepository(ApiModule.apiUtil());
-  //TODO
+  static final DogRepository _dogRepository =
+      DogDataRepository(ApiModule.apiUtil());
+
   static DogRepository dogRepository() {
-    if (_dogRepository == null) {
-      _dogRepository = DogDataRepository(
-        ApiModule.apiUtil(),
-      );
-    }
     return _dogRepository;
   }
 }
